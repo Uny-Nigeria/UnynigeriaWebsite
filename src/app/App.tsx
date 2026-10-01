@@ -240,7 +240,7 @@ function PrivacyContent() {
     <>
       <PolicySection title="1. Overview & Scope"><p>Uny Technologies Limited ("Uny", "we", "us", or "our") respects the privacy of students, merchants, event organizers, and platform users. This Privacy Policy explains how we collect, process, store, protect, and share personal data when you use the Uny mobile application, websites, APIs, and associated services across Nigerian campuses.</p></PolicySection>
       <PolicySection title="2. Data Controller & Contact Details"><p>Uny Technologies Limited is the Data Controller. Website: unynigeria.xyz. Registered Office: Lagos / Abeokuta, Nigeria. Data Protection and General Inquiries: support@unynigeria.xyz.</p></PolicySection>
-      <PolicySection title="3. Information We Collect"><p><strong>Account and profile data:</strong> Full legal name, username or payment tag, email, telephone number, campus, faculty, department, level, and avatar.</p><p><strong>Identity and KYC data:</strong> NIN, BVN, student ID, admission or matriculation evidence, and merchant or organizer business, endorsement, and lodge documentation.</p><p><strong>Biometric and security data:</strong> Facial selfie and liveness images processed by Smile ID, encrypted password hashes, a 4-digit Security PIN, and device-bound passkey tokens. Device biometric data does not leave the device Secure Enclave.</p><p><strong>Automatically collected data:</strong> Device model, operating system, UUID, IP address, network operator, push token, transaction and ledger metadata, bank destination, approximate campus location, and precise GPS coordinates where you grant permission.</p></PolicySection>
+      <PolicySection title="3. Information We Collect"><p><strong>Account and profile data:</strong> Full legal name, username or payment tag, email, telephone number, campus, faculty, department, level, and avatar.</p><p><strong>Identity and KYC data:</strong> NIN, BVN, student ID, and merchant or organizer business, endorsement, and lodge documentation.</p><p><strong>Biometric and security data:</strong> Facial selfie and liveness images processed by Smile ID, encrypted password hashes, a 4-digit Security PIN, and device-bound passkey tokens. Device biometric data does not leave the device Secure Enclave.</p><p><strong>Automatically collected data:</strong> Device model, operating system, UUID, IP address, network operator, push token, transaction and ledger metadata, bank destination, approximate campus location, and precise GPS coordinates where you grant permission.</p></PolicySection>
       <PolicySection title="4. Legal Basis for Processing (NDPA Section 25)"><ol className="list-decimal space-y-1 pl-5"><li><strong>Performance of a contract:</strong> Account creation, wallet management, transfers, event passes, and rent escrow.</li><li><strong>Legal and regulatory obligations:</strong> AML, CFT, KYC, CBN directives, and NFIU reporting.</li><li><strong>Legitimate interests:</strong> Fraud detection, risk scoring, device security, maintenance, and abuse prevention.</li><li><strong>Consent:</strong> Optional geolocation, marketing notifications, and promotional partner deals, which you may withdraw in App Settings.</li></ol></PolicySection>
       <PolicySection title="5. How We Use Your Information"><p>We use data to provision virtual NUBAN accounts; authenticate transactions; generate cryptographically signed, rotating QR codes; protect lodge inspections and rent escrow; prevent fraud, account takeover, SIM-swap attacks, and money laundering; and send transactional alerts, receipts, event reminders, and critical security notices.</p></PolicySection>
       <PolicySection title="6. Data Sharing & Third-Party Disclosures"><p>Uny does not sell, lease, or monetize personal data to advertisers. We share required data only with trusted service partners: CBN-licensed banking and liquidity partners such as Wema Bank Plc, Providus Bank Plc, and Quidax Technologies Limited; Smile ID for identity and liveness verification; secure cloud and database providers such as Supabase or AWS; and law enforcement or regulators where compelled by valid legal process, court order, or statutory directive.</p></PolicySection>
@@ -296,7 +296,7 @@ function SafetyCharterDocument() {
       <PolicySection title="5. Pillar III: Trusted Identity & Zero Impersonation">
         <h4 className="font-semibold text-foreground">5.1 The Uny Verified Badge</h4>
         <p>Every merchant, caretaker, and promoter displays a standardized trust badge:</p>
-        <ul className="list-disc space-y-1 pl-5"><li><strong>Verified Student:</strong> Confirmed institutional email or matriculation data.</li><li><strong>Verified Agent:</strong> Identity vetted against NIMC/BVN databases with physical lodge compound inspection.</li><li><strong>Official Campus Brand:</strong> Verified institutional partner or SUG executive.</li></ul>
+        <ul className="list-disc space-y-1 pl-5"><li><strong>Verified Student:</strong></li><li><strong>Verified Agent:</strong> Identity vetted against NIMC/BVN databases with physical lodge compound inspection.</li><li><strong>Official Campus Brand:</strong> Verified institutional partner or SUG executive.</li></ul>
         <h4 className="pt-2 font-semibold text-foreground">5.2 Anti-Cultism & Anti-Violence Standard</h4>
         <p>Uny bans individuals, associations, or vendors associated with campus cultism, violent extortion, illegal intimidation, or academic malpractice. Violating accounts are terminated immediately and dossiers may be forwarded to campus security and law enforcement.</p>
       </PolicySection>
@@ -468,7 +468,7 @@ function AntiFraudRailDocument() {
         <ol className="list-decimal space-y-1 pl-5"><li>Every webhook must include an x-quidax-signature or bank signature header.</li><li>The raw body is validated with HMAC-SHA512 against the secret webhook key.</li><li>Signatures are compared with crypto.timingSafeEqual and strict buffer-length guards.</li><li>event_id or transaction references are idempotently logged; duplicates receive 200 OK but never re-credit a wallet.</li></ol>
       </PolicySection>
       <PolicySection title="7. Blacklisting & Suspicious Activity Reporting">
-        <p>Confirmed fraud or identity theft may add device fingerprints, NIN, BVN, matriculation numbers, NUBANs, and phone numbers to the Global Platform Blacklist.</p>
+        <p>Confirmed fraud or identity theft may add device fingerprints, NIN, BVN, NUBANs, and phone numbers to the Global Platform Blacklist.</p>
         <p>Transactions meeting high-risk thresholds, including structuring, repeated rapid drains, or unlicensed FX arbitrage, are compiled into Suspicious Activity Reports and filed with the NFIU and SCUML where required under the Money Laundering (Prevention and Prohibition) Act 2022.</p>
       </PolicySection>
       <PolicySection title="8. Disputes & Appeals Workflow">
@@ -1058,7 +1058,7 @@ export default function App() {
                 Keep every naira.
               </h3>
               <p className="mt-3 max-w-[300px] text-[14px] leading-[1.75] text-muted-foreground">
-                Matric number. Tap. Done. Instant transfers
+                Tap. Done. Instant transfers
                 <br className="hidden sm:block" /> with exactly ₦0.00 in rail
                 fees.
               </p>
@@ -1256,7 +1256,7 @@ export default function App() {
                 },
                 {
                   title: "Make it official.",
-                  body: "Verify with your student ID or matric number. A real student community. No room for imposters.",
+                  body: "A real student community. No room for imposters.",
                   icon: BadgeCheck,
                 },
                 {
@@ -1675,7 +1675,7 @@ export default function App() {
                         : modal === "events"
                           ? `Raves, faculty dinners and departmental games in ${campus.name}. Get a digital pass and breeze through the gate.`
                           : modal === "pay"
-                            ? "Send and receive instantly using a verified matric number. Your transfer receipt shows the amount, the recipient, and exactly ₦0.00 in fees."
+                            ? "Your transfer receipt shows the amount, the recipient, and exactly ₦0.00 in fees."
                             : modal === "trade"
                               ? "Textbooks, tech and food from verified students in your own campus community. Keep the conversation and payment in one place."
                               : "This page is a website preview. Official policies, partner onboarding, and social channels will be provided by Uny before launch. No legal terms or account services are represented as live here."}
