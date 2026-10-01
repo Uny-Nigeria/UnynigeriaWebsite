@@ -1,0 +1,52 @@
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --card: #f9fafb;
+  --card-foreground: #111111;
+  --primary: #111111;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #2d3748;
+  --muted: #f3f4f6;
+  --muted-foreground: #626974;
+  --accent: #e9ede8;
+  --accent-foreground: #111111;
+  --border: #e5e7eb;
+  --ring: #6b7280;
+  --radius: 1.25rem;
+}
+.dark {
+  --background: #111111;
+  --foreground: #ffffff;
+  --card: #202020;
+  --card-foreground: #ffffff;
+  --primary: #ffffff;
+  --primary-foreground: #111111;
+  --secondary: #2d3748;
+  --secondary-foreground: #ffffff;
+  --muted: #202020;
+  --muted-foreground: #b0b4bc;
+  --accent: #2d3748;
+  --accent-foreground: #ffffff;
+  --border: #343434;
+  --ring: #b0b4bc;
+}
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+}

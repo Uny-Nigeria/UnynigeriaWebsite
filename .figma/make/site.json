@@ -1,0 +1,12 @@
+{
+  "title": "Uny — Your Campus. Your Everything.",
+  "icons": { "icon": "/images/uny-logo.jpg" },
+  "description": "Streamline campus life for Nigerian university students with verified lodging, event access, peer trading, and zero-fee payments all in one app.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
